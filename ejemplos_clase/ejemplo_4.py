@@ -17,13 +17,20 @@ edades = [35, 38, 55, 33]
 # acumule en la variable "suma_edades" (+=)
 # la suma de todas las edades
 
+suma_edades = 0
+
+for edad in edades:
+    suma_edades += edad
 
 # Utilizar la función len para determinar
 # cuantos elementos hay en la lista edades
 
+len(edades)
 
 # Calcular el promedio de las edades:
 
+promedio = suma_edades / len(edades)
 
 # Imprimir en pantalla el promedio de edades
 
+print(f'La edad promedio es {promedio}')

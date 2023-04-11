@@ -26,7 +26,7 @@ Enunciado:
 - Ya cuenta con la variable notas
 
 Alumno:
-- Crear una una variable llamada cantidad_examenes
+- Crear una variable llamada cantidad_examenes
   para almacenar a cuantos exámenes se presentó
   el alumno (debe inicializarla en cero).
   Utilice un bucle e incremente en 1 la variable
@@ -50,3 +50,16 @@ Alumno:
 print("Mi organizador académico (#_#)")
 # Empezar aquí la resolución del ejercicio
 notas = [70, 82, -1, 65, 55, 67, 87, 92, -1]
+
+cantidad_examenes = 0
+
+cantidad_ausentes = 0
+
+for i in range(len(notas)):
+    if notas[i] >= 0:
+        cantidad_examenes += 1
+    else:
+        cantidad_ausentes += 1
+
+print(f'La cantidad de examenes rendidos son:{cantidad_examenes}')
+print(f'La cantidad de ausentes es:{cantidad_ausentes}')

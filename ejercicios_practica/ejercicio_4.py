@@ -33,3 +33,11 @@ numeros = [1, 5, -1, 6, 10, 2, -5]
 
 # Imprimir en pantalla la variable suma_total
 # El resultado final de la suma deberá ser 24
+
+suma_total = 0
+
+for i in range(len(numeros)):
+    if numeros[i] > 0:
+        suma_total += numeros[i]
+
+print(suma_total)

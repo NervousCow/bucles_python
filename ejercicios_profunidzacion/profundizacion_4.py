@@ -65,3 +65,38 @@ Alumno:
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+
+while True:
+    print(f'Elija el numero correspondiente a la acción que desea ejecutar:')
+    print(f'1- Suma')
+    print(f'2- Resta')
+    print(f'3- Multiplicación')
+    print(f'4- División')
+    print(f'5- SALIR')
+    operacion = str(input('Ingresa la operacion que deseas realizar o 5 para SALIR:\n'))
+
+
+    if operacion == '5':
+        print(f'Hasta la próxima')
+        break
+
+    if operacion != '1' and operacion != '2' and operacion != '3' and operacion != '4':
+        print(f'La opción ingresada no es valida, intentar de nuevo!')
+        continue
+    
+    numero_1 = float(input('Ingrese el primer numero:\n'))
+    numero_2 = float(input('Ingrese el segundo numero:\n'))
+
+    if operacion == '1':
+        resultado = numero_1 + numero_2
+    elif operacion == '2':
+        resultado = numero_1 - numero_2
+    elif operacion == '3':
+        resultado = numero_1 * numero_2
+    elif operacion == '4':
+        if numero_2 == 0:
+            print('Error! División por cero...')
+        else:
+            resultado = numero_1 / numero_2
+    
+    print(f'El resultado es {resultado}')

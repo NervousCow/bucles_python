@@ -15,7 +15,10 @@ colores = []
 # En cada iteración solicitar un color por consola
 # y agregarlo (append) a la lista de colores
 
-
+for i in range(3):
+    color = input('Ingresa un color:')
+    colores.append(color)
 
 # Imprimir en pantalla la lista de colores
 
+print(colores)

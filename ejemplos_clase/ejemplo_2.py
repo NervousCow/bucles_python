@@ -21,7 +21,12 @@ persona = input("Ingrese nombre persona a buscar en la lista:\n")
 # 2 - Si la persona se encuentra en la lista,
 #     notificar por consola el hallazgo 
 
-
+for invitado in invitados:
+    if invitado == persona.capitalize():
+        print(f'{persona} esta invitada/o.')
+        break
+else:
+    print(f'{persona} no esta en la lista.')
 
 # NOTA:
 # Más adelante veremos que con el operador

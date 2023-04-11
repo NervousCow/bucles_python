@@ -32,3 +32,15 @@
 
 
 # Imprimir en pantalla la variable contenidos_curso
+
+contenidos_curso = ['python', 'variables', 'condicionales', 'listas', 'bucles']
+
+print(contenidos_curso)
+
+contenidos_curso.append('tulpas')
+
+print(contenidos_curso)
+
+print(contenidos_curso.pop())
+
+print(contenidos_curso)

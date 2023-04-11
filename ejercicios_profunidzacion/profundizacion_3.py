@@ -59,3 +59,19 @@ print('¡Estado del clima aumentado!')
 # Empezar aquí la resolución del ejercicio
 temperaturas = [12.8, 18.6, 14.5, 27.8, 12.1, 26.2, 13.5, 18.6,
                   14.7, 19.6, 21.2, 31.4]
+
+suma_total = sum(temperaturas)
+
+cantidad_temperaturas = len(temperaturas)
+
+promedio = suma_total / cantidad_temperaturas
+
+temperatura_max = max(temperaturas)
+
+temperatura_min = min(temperaturas)
+
+print(f'La suma de las temperaturas es:{suma_total}')
+print(f'La cantidad de temperaturas medidas es:{cantidad_temperaturas}')
+print(f'La temperatura promedio es:{promedio}')
+print(f'La temperatura maxima es:{temperatura_max}')
+print(f'La temperatura minima es:{temperatura_min}')
