@@ -89,14 +89,16 @@ while True:
 
     if operacion == '1':
         resultado = numero_1 + numero_2
+        print(f'El resultado es {resultado}')
     elif operacion == '2':
         resultado = numero_1 - numero_2
+        print(f'El resultado es {resultado}')
     elif operacion == '3':
         resultado = numero_1 * numero_2
+        print(f'El resultado es {resultado}')
     elif operacion == '4':
         if numero_2 == 0:
             print('Error! División por cero...')
         else:
             resultado = numero_1 / numero_2
-    
-    print(f'El resultado es {resultado}')
+            print(f'El resultado es {resultado}')
